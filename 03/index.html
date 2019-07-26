@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>HTML Forms</title>
+</head>
+<body>
+    <h1>HTML Forms</h1>
+    <form method="GET"> <!-- action="phpurl" is omitted here -->
+        <label for="usr">Your username:</label>
+        <input type="text" name="username" id="usr" placeholder="name youself" required autofocus><span>*</span>
+        
+        <br><br>
+
+        <label for="email">Your email:</label>
+        <input type="email" name="email" id="email" placeholder="so we can get in touch" required><span>*</span>
+        
+        <br><br>
+
+        <label for="passwd">Your password:</label>
+        <input type="password" name="password" id="passwd" placeholder="easy to remember and hard to guess" required><span>*</span>
+
+        <p>Select your age range:</p>
+        <input type="radio" name="age" id="opt-1" value="1-16">
+        <label for="opt-1">1-16</label>
+        <input type="radio" name="age" id="opt-2" value="17-32" checked>
+        <label for="opt-2">17-32</label>
+        <input type="radio" name="age" id="opt-3" value="33-48">
+        <label for="opt-3">33-48</label>
+        <input type="radio" name="age" id="opt-4" value="49+">
+        <label for="opt-4">49+</label>
+        
+        <br><br>
+
+        <label for="secques-1">Secure quetion one:</label>
+        <select name="quetions" id="secques-1">
+            <option value="q1">What's your favourite food?</option>
+            <option value="q2">What's the name of your first pet?</option>
+            <option value="q3">What's your ideal job?</option>
+        </select>
+        <br>
+        <label for="ansr-1">Your answer is:</label>
+        <input type="text" name="answer" id="ansr-1" required><span>*</span>
+
+        <br><br>
+
+        <label for="secques-2">Secure quetion two:</label>
+        <select name="quetions" id="secques-2">
+            <option value="q4">Who's your favourite actor?</option>
+            <option value="q5">In which month were you given birth?</option>
+            <option value="q6">What's the name of your primary school?</option>
+        </select>
+        <br>
+        <label for="ansr-2">Your answer is:</label>
+        <input type="text" name="answer" id="ansr-2" required><span>*</span>
+
+        <br><br>
+
+        <label for="bio">Your biography:</label>
+        <br>
+        <textarea name="biography" id="bio" cols="50" rows="10" placeholder="about yourself..."></textarea>
+
+        <br><br>
+
+        <input type="submit" value="Submit the form">
+    </form>
+</body>
+</html>

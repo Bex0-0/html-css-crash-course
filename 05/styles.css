@@ -1,0 +1,68 @@
+/* p {
+    font-size: 1.25em;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.error {
+    color: red;
+}
+
+p.warning {
+    color: orange;
+}
+
+p.success {
+    color: #4fdb4f;
+}
+
+p.success.feedback {
+    border: 2px dashed #4fdb4f;
+}
+
+#content {
+    background-color: #ebebeb;
+    padding: 20px;
+}
+
+div .error {
+    color: orangered;
+}
+
+a[href] {
+    font-weight: bold;
+    text-decoration: none;
+    text-transform: capitalize
+}
+
+a[href$="uk"] {
+    background-color: blueviolet;
+    color: #ebebeb;
+}
+
+a[href*="google"] {
+    background-color: #ebebeb;
+    color: blueviolet;
+}
+
+a[href^="https://developer"] {
+    background-color: #696262;
+    color: cyan;
+} */
+
+/* ============================ */
+div {
+    /* inherited property: */
+    color: lightcoral; 
+    font-weight: bold;
+    /* uninherited property: */
+    border: 1.5px solid grey;
+    padding: 5px;
+    margin: 10px;
+}
+
+p {
+    border: inherit;
+    padding: inherit;
+    /* override inherited properties: */
+    color: crimson;
+}

@@ -1,7 +1,7 @@
 span {
     /* display: block; */
     margin: 20px; /* inline margin only left and right take effect */
-    padding: 20px; /* inline padding top and bottom clapse when you narrow the window */
+    padding: 20px; /* inline padding top and bottom seem to clapse when you narrow the window, in fact distance between two lines just effected by line-height */
     display: inline-block; /* top and bottom margins take effect and the don't clapse when you narrow the window */
 }
 

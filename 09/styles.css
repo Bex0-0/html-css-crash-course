@@ -116,3 +116,51 @@ footer {
     padding: 10px;
     text-align: center;
 }
+
+/* pseudo classes */
+nav li a:hover {
+    text-decoration: underline;
+}
+.images li:hover {
+    position: relative;
+    top: -4px;
+    left: -2px;
+    box-shadow: 4px 8px 6px 4px #feb614;
+}
+form input:focus {
+    border: 4px dashed #4b4b4b;
+    /* outline: none;  */
+    /* we often keep the outline added by user agent in case the css file does not load */
+    outline-offset: 1px; 
+}
+form input:valid {
+    border: 4px solid lightgreen;
+}
+
+/* pseudo elements */
+article p::first-line {
+    font-weight: bold;
+    font-size: 1.2em;
+}
+section.join p::first-letter {
+    font-weight: bolder;
+    font-size: 1.5em;
+    color: #f63232;
+}
+p::selection {
+    background-color: rgba(246, 50, 50, 1);
+    color: white;
+}
+/* Only a few CSS properties can be applied to the ::selection selector: color, background, cursor, and outline. */
+main p::after,
+section.join p::after {
+    content: "";
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    background-image: url(img/mushroom.png);
+    background-size: 100%;
+    position: relative;
+    top: .25em;
+    left: 10px;
+}

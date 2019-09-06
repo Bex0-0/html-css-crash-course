@@ -65,6 +65,7 @@ nav li {
     width: 25%;
     display: inline-block;
     font-size: 24px;
+    box-sizing: border-box;
 }
 nav a {
     text-decoration: none;
